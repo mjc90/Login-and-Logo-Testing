@@ -75,6 +75,66 @@ By executing this scenario, the process of verifying the OrangeHRM logo's presen
 
 
 
+
+# OrangeHRM Logo Verification Automation
+
+The primary objective of this project is to automate the verification of the presence of the OrangeHRM logo on the OrangeHRM homepage using the Behave framework with Selenium for web automation.
+
+
+## OrangeHRM Login Automation
+
+The primary objective of this project is to automate the login process to the OrangeHRM application using valid credentials. The automation ensures that users can successfully log in to the Dashboard page after entering the correct username and password.
+
+## Feature: OrangeHRM Login
+This feature outlines a scenario for automating the login process to the OrangeHRM application using valid parameters.
+
+#### Scenario: Login to OrangeHRM with Valid Parameters
+
+#### Steps:
+
+#### 1. Given I launch Chrome browser
+* Action: This step initializes the Chrome browser using Selenium's 'webdriver.Chrome()'.
+
+* Expected Result: The Chrome browser window should launch successfully.
+
+#### 2. When I open OrangeHRM Login page
+* Action: This step navigates the initialized Chrome browser to the OrangeHRM Login page URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login.
+
+* Expected Result: The OrangeHRM Login page should load within 15 seconds, allowing users to enter their credentials.
+
+#### 3. And Enter username "{user}" and password "{pwd}"
+* Action: This step inputs the provided username ("admin") and password ("admin123") into the respective fields on the OrangeHRM Login page.
+
+* Expected Result: The username and password fields should be populated with the provided credentials.
+
+#### 4. And Click on login button
+* Action:  This step clicks on the "Login" button on the OrangeHRM Login page to submit the entered credentials.
+
+* Expected Result: The system should process the provided credentials and redirect the user to the Dashboard page within 8 seconds.
+
+#### 5. Then User must successfully login to the Dashboard page
+* Action:   This step verifies that the user has successfully logged in by confirming the presence of the "Dashboard" text on the Dashboard page.
+
+* Expected Result: The "Dashboard" text should be displayed on the Dashboard page, confirming successful login. The Chrome browser window should then be closed, concluding the test scenario.
+
+## Implementation:
+
+#### * Behave Framework:
+The Behave framework is utilized for Behavior-Driven Development (BDD) testing, enabling structured, human-readable test scenarios and step definitions.
+
+#### * Selenium WebDriver: 
+ Selenium WebDriver is employed to automate web browser actions, including launching the Chrome browser, navigating to specific URLs, entering credentials, clicking buttons, and verifying elements on web pages.
+
+#### * XPath Locator:
+ XPath locators are used to identify and interact with web elements such as input fields and buttons on the OrangeHRM Login page.
+
+#### * Time Delay:
+Time delays using time.sleep() are incorporated to ensure that web elements and pages have sufficient time to load, facilitating accurate interaction and verification.
+
+##  Conclusion: 
+By executing this project, you can automate the login process to the OrangeHRM application using valid credentials. This automation enhances testing efficiency by eliminating manual login efforts, ensuring consistent login results, and facilitating user authentication validation in the OrangeHRM system.
+
+
 ## Contributing
 
 Contributions are always welcome!
