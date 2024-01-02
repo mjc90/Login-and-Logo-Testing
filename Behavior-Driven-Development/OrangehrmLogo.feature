@@ -4,3 +4,7 @@ Feature: OrangeHRM Logo
     When open orange hrm homepage
     Then verify that the logo present on page
     And close browser
+
+
+#Open the Terminal and locate the OrangehrmLogo.feature file and press enter.
+#Here is the command - "behave Behavior-Driven-Development\OrangehrmLogo.feature"
