@@ -11,11 +11,11 @@ This repository contains a list of three projects completed during my automation
 
 ## Project List
 
-| Project Name                           | Description                                                                                             | Tools Used     |
+| Project Name                           | Description                                                                                             | Tools & Technologies Used     |
 | -------------------------------------- | ------------------------------------------------------------------------------------------------------- | -------------- |
-| Login and Logo Testing                 | Verified the presence of a logo on the login page of a web application.                                 | Selenium with Python Behave (BDD)  |
-| Login and Logo Testing                 | Verified successful login and redirection to the dashboard by providing the correct username and password on a web application. | Selenium with Python Behave (BDD)  |
-| Login and Logo Testing                 | newfnwenfuwenfuwe                                                                                                | Selenium with Python Behave (BDD)  |
+| Login and Logo Testing                 | Verified the presence of a logo on the login page of a web application.                                 | Behave Framework, Selenium WebDriver, Chrome WebDriver, XPath Locators  |
+| Login and Logo Testing                 | Verified successful login and redirection to the dashboard by providing the correct username and password on a web application. | Behave Framework, Selenium WebDriver, Chrome WebDriver, XPath Locators  |
+| Login and Logo Testing                 | Automates the OrangeHRM login using BDD and Selenium, testing multiple username-password combinations for enhanced reliability and efficiency.                                                                                             | Behave Framework, Selenium WebDriver, Chrome WebDriver, XPath Locators, Allure Reporting  |
 
 
 
