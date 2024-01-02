@@ -22,7 +22,7 @@ This repository contains a list of three projects completed during my automation
 ## Getting Started
 
 
-# OrangeHRM Logo Verification Automation
+# Project 1 - OrangeHRM Logo Verification Automation
 
 The primary objective of this project is to automate the verification of the presence of the OrangeHRM logo on the OrangeHRM homepage using the Behave framework with Selenium for web automation.
 
@@ -76,7 +76,9 @@ By executing this scenario, the process of verifying the OrangeHRM logo's presen
 
 
 
-# OrangeHRM Logo Verification Automation
+
+
+# Project 2 - OrangeHRM Logo Verification Automation
 
 The primary objective of this project is to automate the verification of the presence of the OrangeHRM logo on the OrangeHRM homepage using the Behave framework with Selenium for web automation.
 
