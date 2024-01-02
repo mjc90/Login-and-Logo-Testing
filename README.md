@@ -137,6 +137,77 @@ Time delays using time.sleep() are incorporated to ensure that web elements and 
 By executing this project, you can automate the login process to the OrangeHRM application using valid credentials. This automation enhances testing efficiency by eliminating manual login efforts, ensuring consistent login results, and facilitating user authentication validation in the OrangeHRM system.
 
 
+
+
+
+# Project 3 - OrangeHRM Login Automation with Multiple Parameters
+
+The primary objective of this project is to automate the login process to the OrangeHRM web application using various combinations of usernames and passwords. By utilizing a Scenario Outline with Examples, the automation tests multiple parameter combinations to ensure that users can successfully log in to the Dashboard page with valid credentials.
+
+
+## Feature: OrangeHRM Login
+
+This feature outlines a scenario for automating the login process to the OrangeHRM application using multiple parameter combinations.
+
+#### Scenario Outline: Login to OrangeHRM with Multiple Parameters
+
+#### Steps:
+
+#### 1. Given I launch Chrome browser
+
+* Action: This step initializes the Chrome browser using Selenium's webdriver.Chrome().
+* Expected Result: The Chrome browser window should launch successfully.
+
+#### 2. When I open OrangeHRM Login page
+
+* Action: This step navigates the initialized Chrome browser to the OrangeHRM Login page URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login.
+* Expected Result: The OrangeHRM Login page should load within 15 seconds, allowing users to enter their credentials.
+
+#### 3. And Enter username "{user}" and password "{pwd}"
+
+* Action: This step inputs the provided username and password combinations into the respective fields on the OrangeHRM Login page.
+* Expected Result: The username and password fields should be populated with the provided credentials.
+
+#### 4. And Click on login button
+
+* Action: This step clicks on the "Login" button on the OrangeHRM Login page to submit the entered credentials.
+* Expected Result: The system should process the provided credentials and redirect the user to the Dashboard page within 8 seconds.
+
+#### 5. Then User must successfully login to the Dashboard page
+
+* Action: This step verifies that the user has successfully logged in by confirming the presence of the "Dashboard" text on the Dashboard page.
+* Expected Result: The "Dashboard" text should be displayed on the Dashboard page, confirming successful login. If the test fails, an assertion error message is displayed, and the Chrome browser window is closed.
+
+### Examples:
+The Scenario Outline is parameterized with multiple examples of username and password combinations, including:
+* Username: admin, Password: admin123
+* Username: admin123, Password: admin
+* Username: adminxyz, Password: admin123
+* Username: admin, Password: adminxyz
+
+Each example represents a unique combination of usernames and passwords to test various scenarios and validate the login functionality across different credential inputs.
+
+## Implementation:
+
+#### * Behave Framework:
+The Behave framework is utilized for Behavior-Driven Development (BDD) testing, enabling structured, human-readable test scenarios and step definitions.
+
+#### * Selenium WebDriver: 
+Selenium WebDriver is employed to automate web browser actions, including launching the Chrome browser, navigating to specific URLs, entering credentials, clicking buttons, and verifying elements on web pages.
+
+#### * XPath Locator:
+XPath locators are used to identify and interact with web elements such as input fields, buttons, and text on the OrangeHRM Login page and Dashboard page.
+
+#### * Time Delay:
+Time delays using time.sleep() are incorporated to ensure that web elements and pages have sufficient time to load, facilitating accurate interaction and verification.
+
+##  Conclusion: 
+By executing this project, i can automate the login process to the OrangeHRM application using multiple parameter combinations. This automation enhances testing efficiency by testing various credential scenarios, ensuring consistent login results, and facilitating user authentication validation in the OrangeHRM system.
+
+
+
+
+
 ## Contributing
 
 Contributions are always welcome!
