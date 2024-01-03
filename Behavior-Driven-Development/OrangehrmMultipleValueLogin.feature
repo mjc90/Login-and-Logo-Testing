@@ -19,4 +19,4 @@ Feature: OrangeHRM Login
 #Open the Terminal and locate the OrangehrmLogin.feature file and press enter.
 #Here is the command - "behave Behavior-Driven-Development\OrangehrmMultipleValueLogin.feature"
 # Allure Report Command - behave -f allure_behave.formatter:AllureFormatter -o Reports/ Behavior-Driven-Development\OrangehrmMultipleValueLogin.featur
-# allure serve Results/
+# allure serve Reports/
